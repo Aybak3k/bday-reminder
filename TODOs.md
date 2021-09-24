@@ -23,6 +23,10 @@ ___
 
 
 ## Now
-- Access JSON &check;
-- loop && print from json
-    - iterate through nested objects
+Data :
+
+_ | data.json | data/
+| - | - | -
+access | &check;|
+looping | &check; |
+adding | |
