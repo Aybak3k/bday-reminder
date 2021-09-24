@@ -1,32 +1,36 @@
-## Layout
-- iterable data.json
-<!-- web : db -->
-- {functionality} node append to file
-<!-- lib -->
-- index.js : just ouput
-
-
-## far Future
-- more info for each person in `data.json`
-
-
-## modifications
-- data.json || data/
-    - nested props
-    - OR files looping
+# INDEX
+0) [Architecture](#architecture)
+1) [Future Plans](#future-plans)
+1) [Modifications](#modifications)
+1) [Listing Tasks](#listing-tasks)
+1) [NOW!](#now)
 ___
+<br><br><br>
 
 
-## near Future
-- [write to json in node](https://stackabuse.com/reading-and-writing-json-files-with-node-js/)
+## Architecture
+- data/  <!-- iterable -->
+- {interacting} <!-- retrieving -->
+- {functionality}  <!-- main() -->
+- index.js  <!-- just ouput -->
+
+
+## Future Plans
+- more info for each person in `data/`
+
+
+## Modifications
+- data.json => data/
+
+
+## Listing Tasks
 - [store date in JSON](https://www.w3schools.com/js/js_json_parse.asp)
+- data/
+    - looping through each file
+    - accessing data inside && storing
+    - checking && ~~adding~~ creating
+        - && no `data/`
 
 
-## Now
-Data :
-
-_ | data.json | data/
-| - | - | -
-access | &check;|
-looping | &check; |
-adding | |
+## NOW!
+> main function with temp data obj

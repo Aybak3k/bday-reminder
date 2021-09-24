@@ -1,23 +1,33 @@
-<!-- in order -->
+# INDEX
+0) [Side](#side)
+1) [reading files](#reading-files)
+1) [JSON to obj](#json-to-obj)
+___
+<br><br><br>
 
-### reading from data.json
+
+## Side
+- main fucntion 0ed then data interaction
+- looping through nested obj :
+    ```js
+    // returning the property alone makes it in string
+    // so if we want to access nested prop
+    // we have to use that syntax : people[person].bdayd
+    for (const person in people) {
+        lg(`${person} : ${people[person].bday}`)
+    }
+    ```
+
+
+## reading files
 ```js
 const fs = require("fs");
 let data = fs.readFileSync("data.json");
 // Sync so it awaits retrieving the data
+// HINT : don use require directly
 ```
 
-### from JSON to JS obj
+## JSON to obj
 ```js
 let people = JSON.parse(data);
-```
-
-### looping through nested obj
-```js
-for (const person in people) {
-    lg(`${person} : ${people[person].bday}`)
-}
-// returning the property alone makes it in string
-// so if we want to access nested prop
-// we have to use that syntax : people[person].bday
 ```
