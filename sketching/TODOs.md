@@ -33,4 +33,6 @@ ___
 
 
 ## NOW!
-> main function with temp data obj
+- main function with temp data obj
+    - date storage in json
+    - looping through files => []?

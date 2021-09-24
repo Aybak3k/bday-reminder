@@ -7,7 +7,9 @@ ___
 
 
 ## Side
-- main fucntion 0ed then data interaction
+- flow
+    - main fucntion + temp date
+    - data interaction
 - looping through nested obj :
     ```js
     // returning the property alone makes it in string
