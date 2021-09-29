@@ -17,7 +17,9 @@ ___
 
 
 ## Future Plans
+- do I need to create a file for taking input??
 - more info for each person in `data/`
+- the option to view all?
 
 
 ## Modifications
@@ -36,8 +38,6 @@ ___
 
 
 ## NOW!
-- do I need to create a file for taking input??
-- [store date in JSON](https://www.w3schools.com/js/js_json_parse.asp)
 - main function
     - takes bday_dates[]
     - => nearest (lowest) bday (ms)

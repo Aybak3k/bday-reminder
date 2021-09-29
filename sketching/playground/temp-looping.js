@@ -25,4 +25,8 @@ for (const i in dataDirFiles) {
 
 
 // debugging
-lg(dataFiles[0]["bday"])
+lg(
+    new Date(
+        dataFiles[0]["bday"]
+    ).toDateString()
+)
