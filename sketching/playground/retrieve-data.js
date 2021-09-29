@@ -6,7 +6,7 @@ const lg = val => console.log(val)
 const fs = require("fs");
 
 
-// read data/* in obj data[]
+// store data/* in [] as {}s
 const dataDirFiles = fs.readdirSync("data")
 const dataFiles = []
 
@@ -25,8 +25,8 @@ for (const i in dataDirFiles) {
 
 
 // debugging
-lg(
+lg(dataFiles[0]["Name"]+ " : " +
     new Date(
-        dataFiles[0]["bday"]
+        dataFiles[0]["B-day"]
     ).toDateString()
 )
