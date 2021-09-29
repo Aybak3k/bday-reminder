@@ -66,6 +66,6 @@ fs.readdirSync( path, options )
 
 ## Custom Nodejs Modules
 ```js
-exports.$ = () =>
-// && then normal require
+exports.$ = () => ...  // && then normal require
+module.exports $  // main func()
 ```

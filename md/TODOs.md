@@ -23,6 +23,8 @@ ___
 - do I need to create a file for taking input??
 - more info for each person in `data/`
 - the option to view all?
+- config.js => settings like <\dir | file>
+- .csv for data entry
 
 
 ## Modifications
