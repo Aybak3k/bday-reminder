@@ -17,6 +17,7 @@ ___
 
 
 ## Future Plans
+- dropping the year
 - do I need to create a file for taking input??
 - more info for each person in `data/`
 - the option to view all?
@@ -40,4 +41,6 @@ ___
 ## NOW!
 - main function
     - takes bday_dates[]
+        - in a loop
     - => nearest (lowest) bday (ms)
+        - ignores year
