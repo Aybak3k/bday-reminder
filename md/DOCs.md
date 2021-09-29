@@ -12,9 +12,9 @@ ___
 
 ## Side
 - vscode windows
-    - left : actual code
-    - right : TODOs && ..
-    - bottom : terminal
+    - left : lib
+    - right : md
+    - bottom : .sh
 - workflow
     - main fucntion + temp date
     - data interaction

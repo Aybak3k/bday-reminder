@@ -18,26 +18,25 @@ ___
 
 
 ## Future Plans
-- dropping the year
+- dropping the year?
 - do I need to create a file for taking input??
 - more info for each person in `data/`
 - the option to view all?
 
 
 ## Modifications
-- data.json => data/
+- data/ >> data.json
+    - retrieve && create
+    - => obj[]  // array of objects + standard key
 ___
 
 ## Listing Tasks
-- data/ {interacting}
-    - storing each file
-    - as a JS obj
-    - in [] && export it
 - creating
     - take input from user
     - create a file to store input in
-- check input
+- checks
     - valid bday date
+    - empty data
 
 
 ## NOW!
@@ -46,5 +45,3 @@ ___
         - in a loop
     - => nearest (lowest) bday (ms)
         - ignores year
-- data/ >> data.json
-    - && in architecture
