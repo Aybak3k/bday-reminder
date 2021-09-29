@@ -10,10 +10,11 @@ ___
 
 
 ## Architecture
-- data/  <!-- iterable -->
-- {interacting} <!-- retrieving -->
-- {functionality}  <!-- main() -->
 - index.js  <!-- just ouput -->
+- lib
+    - data/  <!-- iterable -->
+    - {interacting} <!-- retrieving -->
+    - {functionality}  <!-- main() -->
 
 
 ## Future Plans
