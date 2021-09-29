@@ -1,3 +1,6 @@
+<!-- unused
+Object.keys(obj)[0]
+ -->
 # INDEX
 0) [Side](#side)
 1) [Loop thorugh nested obj]($loop-through-nested-obj)

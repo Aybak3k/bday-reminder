@@ -2,6 +2,7 @@
 0) [Architecture](#architecture)
 1) [Future Plans](#future-plans)
 1) [Modifications](#modifications)
+1) [Overall Scenario](#overall-scenario)
 <!--  -->
 1) [Listing Tasks](#listing-tasks)
 1) [NOW!](#now)
@@ -28,6 +29,11 @@ ___
 - data/ >> data.json
     - retrieve && create
     - => obj[]  // array of objects + standard key
+
+
+## Overall Scenario
+> run from the terminal : prints next bday with person's name && then ask if you want to add a new one
+
 ___
 
 ## Listing Tasks
