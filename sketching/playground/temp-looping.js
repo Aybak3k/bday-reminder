@@ -1,9 +1,3 @@
-// for the DOCs
-    // fs.readdirSync( path, options )
-        // store dir/ files **AS STRING** in []
-        // use length && string name??
-
-
 //  for simplicity sake
 const lg = val => console.log(val)
 
@@ -12,15 +6,23 @@ const lg = val => console.log(val)
 const fs = require("fs");
 
 
-// read data/* in obj[]
-const data = []
-const dataFiles = fs.readdirSync("data")
+// read data/* in obj data[]
+const dataDirFiles = fs.readdirSync("data")
+const dataFiles = []
 
-for (const i in dataFiles) {
-    data.push(
-        fs.readFileSync(
-            `data/${dataFiles[i]}`
+for (const i in dataDirFiles) {
+    dataFiles.push(
+        JSON.parse(
+            fs.readFileSync(
+                `data/${dataDirFiles[i]}`
+            )
         )
     )
 }
-lg(JSON.parse(data[0]))
+
+
+// export dataFiles
+
+
+// debugging
+lg(dataFiles[0]["bday"])

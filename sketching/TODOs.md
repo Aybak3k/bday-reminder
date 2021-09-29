@@ -2,6 +2,7 @@
 0) [Architecture](#architecture)
 1) [Future Plans](#future-plans)
 1) [Modifications](#modifications)
+<!--  -->
 1) [Listing Tasks](#listing-tasks)
 1) [NOW!](#now)
 ___
@@ -22,17 +23,21 @@ ___
 ## Modifications
 - data.json => data/
 
+___
 
 ## Listing Tasks
-- [store date in JSON](https://www.w3schools.com/js/js_json_parse.asp)
-- data/
-    - looping through each file
-    - accessing data inside && storing
-    - checking && ~~adding~~ creating
-        - && no `data/`
+- data/ {interacting}
+    - storing each file
+    - as a JS obj
+    - in [] && export it
+- creating
+    - take input from user
+    - create a file to store input in
 
 
 ## NOW!
-- main function with temp data obj
-    - date storage in json
-    - looping through files => []?
+- do I need to create a file for taking input??
+- [store date in JSON](https://www.w3schools.com/js/js_json_parse.asp)
+- main function
+    - takes bday_dates[]
+    - => nearest (lowest) bday (ms)
