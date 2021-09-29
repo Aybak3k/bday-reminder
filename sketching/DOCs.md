@@ -4,6 +4,8 @@
 1) [Read File](#read-file)
 1) [JSON to obj](#json-to-obj)
 1) [Read Dir](#read-dir)
+1) [data dir OR data file](#data-dir-or-data-file)
+1) [Custom Nodejs Modules](#custom-nodejs-modules)
 ___
 <br><br><br>
 
@@ -51,4 +53,16 @@ fs.readdirSync( path, options )
 * for in && arr.push
 * fs.readFileSync(`path/${arr[i]}`)
 */
+```
+
+
+## data dir OR data file
+- data/ : long obj
+- data.json : short obj
+
+
+## Custom Nodejs Modules
+```js
+exports.$ = () =>
+// && then normal require
 ```

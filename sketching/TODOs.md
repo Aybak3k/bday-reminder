@@ -25,7 +25,6 @@ ___
 
 ## Modifications
 - data.json => data/
-
 ___
 
 ## Listing Tasks
@@ -36,6 +35,8 @@ ___
 - creating
     - take input from user
     - create a file to store input in
+- check input
+    - valid bday date
 
 
 ## NOW!
@@ -44,3 +45,5 @@ ___
         - in a loop
     - => nearest (lowest) bday (ms)
         - ignores year
+- data/ >> data.json
+    - && in architecture
