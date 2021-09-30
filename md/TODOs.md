@@ -11,11 +11,11 @@ ___
 
 
 ## Architecture
-- index.js  <!-- just ouput -->
+- index.js
 - lib
-    - data/  <!-- iterable -->
-    - {interacting} <!-- retrieving -->
-    - {functionality}  <!-- main() -->
+    - data/
+    - retrieve-data
+    - compare-bdays
 
 
 ## Future Plans
