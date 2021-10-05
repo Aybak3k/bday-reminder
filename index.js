@@ -1,3 +1,3 @@
-const rd = require("./lib/retrieve-data.js")
+const rd = require('./lib/retrieve-data')
 
-console.log(rd(undefined))
+console.log(rd())

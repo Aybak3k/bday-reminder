@@ -9,6 +9,7 @@ Object.keys(obj)[0]
 1) [Read Dir](#read-dir)
 1) [data dir OR data file](#data-dir-or-data-file)
 1) [Custom Nodejs Modules](#custom-nodejs-modules)
+1) [__dirname](#dirname)
 ___
 <br><br><br>
 
@@ -69,3 +70,10 @@ fs.readdirSync( path, options )
 exports.$ = () => ...  // && then normal require
 module.exports $  // main func()
 ```
+
+
+## __dirname
+- index.js
+- lib/
+    - retrieve-data.js
+> importing `rd()` is like writing the method inside `index.js` **&&!** executing it in it's own path
