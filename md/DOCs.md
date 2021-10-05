@@ -10,6 +10,7 @@ Object.keys(obj)[0]
 1) [data dir OR data file](#data-dir-or-data-file)
 1) [Custom Nodejs Modules](#custom-nodejs-modules)
 1) [__dirname](#dirname)
+1) [Change the name Crash the main](#change-the-name-crash-the-main)
 ___
 <br><br><br>
 
@@ -68,7 +69,7 @@ fs.readdirSync( path, options )
 ## Custom Nodejs Modules
 ```js
 exports.$ = () => ...  // && then normal require
-module.exports $  // main func()
+module.exports = $  // main func()
 ```
 
 
@@ -77,3 +78,12 @@ module.exports $  // main func()
 - lib/
     - retrieve-data.js
 > importing `rd()` is like writing the method inside `index.js` **&&!** executing it in it's own path
+
+
+## Change the name Crash the main
+```js
+// problem line : 
+pplObjArr.reduce((a,b) => (a.calDigit > b.calDigit) ? a : b)
+// get ur eyes checked dude >> ? b : a
+// but... Y tho?!...
+```
