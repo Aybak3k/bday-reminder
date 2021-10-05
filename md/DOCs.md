@@ -17,8 +17,8 @@ ___
 ## Side
 - vscode windows
     - left : lib
-    - right : md
-    - bottom : .sh
+    - right : md | data
+    - bottom | whole : .sh
 - workflow
     - main fucntion + temp date
     - data interaction
