@@ -41,7 +41,7 @@ ___
 ## Listing Tasks
 - creating
     - take input from user
-    - create a file to store input in
+    - create a js file for input functionality
 - checks
     - valid bday date
     - empty data
