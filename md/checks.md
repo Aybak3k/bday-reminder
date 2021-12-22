@@ -1,1 +1,0 @@
-- [ ] compare bdays main function

@@ -1,7 +1,7 @@
 # Vars
-d=''
-m=''
-y=''
+d=()
+m=()
+y=()
 name=''
 
 # template
@@ -16,4 +16,5 @@ EOM
 
 # create file
 echo "$template"
-#  > "./lib/data${name}.json"
+#  > "./side/${name}.json"
+#  > "./lib/data/${name}.json"
