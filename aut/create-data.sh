@@ -17,11 +17,10 @@ tmpl_gen () {
     name="bot-${d}-${m}-${y}"
     template="
     {\n
-        \t\"Name\": ${name},\n
+        \t\"Name\": \"${name}\",\n
         \t\"day\": ${d},\n
         \t\"month\": ${m},\n
-        \t\"year\": ${y}\n
-    \b}
+        \t\"year\": ${y}\n}
     "
     tmpl_gen_this_val=$template
     tmpl_gen_name_val=$name
