@@ -4,3 +4,6 @@
     - obj[]
     - && export raw data
     - print out (Mon 00, xxxx)
+    - files to modify
+        - compare-bdays.js
+        - index.js
