@@ -1,11 +1,5 @@
-// ---------------------------------------
-// new Date(closest).toDateString()
-// getNearest --> date
-// create a gitignored real data
-// console.log(console.log(3)) << 3 \n undefined
-
-// data
-const data = [
+// Data
+const pplObjArr = [
     { Name: 'bot-1-2-2000', day: 1, month: 2, year: 2000 },
     { Name: 'bot-1-3-2000', day: 1, month: 3, year: 2000 },
     { Name: 'bot-1-4-2000', day: 1, month: 4, year: 2000 },
@@ -14,14 +8,16 @@ const data = [
     { Name: 'bot-31-5-2000', day: 31, month: 5, year: 2000 }
 ]
 
-// date VARs
-const currentDate = new Date()
+
+// Current Date Vars
+const currentDate = new Date(2022, 0, 1)
 const currentMonth = currentDate.getMonth()  // 0-11
 const currentDay = currentDate.getDate()  // 1-31
 
-// find nearest calendrical digit : month || day
+
+// Find Nearest Calendrical Digit >> month || day
 const getNearest = (pplObjArr, calDigit) => {
-    const nearest = pplObjArr.reduce((a,b) => (a.calDigit > b.calDigit) ? b : a)
+    const nearest = pplObjArr.reduce((a,b) => (a[`${calDigit}`] > b[`${calDigit}`]) ? b : a)
     return nearest
 }
 
@@ -55,5 +51,6 @@ const getFormated = pplObjArr => {
     }
 }
 
-// testing
-getFormated(data)
+
+// Testing
+getFormated(pplObjArr)
