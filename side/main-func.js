@@ -10,25 +10,26 @@ const pplObjArr = [
 
 
 // Current Date Vars
-const currentDate = new Date(2022, 0, 1)
+const currentDate = new Date(2022, 3 - (1), 1)
 const currentMonth = currentDate.getMonth()  // 0-11
 const currentDay = currentDate.getDate()  // 1-31
 
 
 // Find Nearest Calendrical Digit >> month || day
-const getNearest = (pplObjArr, calDigit) => {
-    const nearest = pplObjArr.reduce((a,b) => (a[`${calDigit}`] > b[`${calDigit}`]) ? b : a)
+const getNearestDigit = (pplObjArr, calDigit, currentDigit) => {
+    const filteredDigits = pplObjArr.map(obj => obj[`${calDigit}`]).filter(digit => digit >= currentDigit)
+    const nearest = filteredDigits.reduce((a,b) => (a > b) ? b : a)
     return nearest
 }
 
 
-// create identical nearest digits [] - using getNearest()
+// create identical nearest digits [] - using getNearestDigit()
 const getIdenticals = pplObjArr => {
     const identicals = []
 
-    for (const index in pplObjArr) {
-        if (getNearest(pplObjArr, "month")["month"] == pplObjArr[index]["month"]) {  // check months
-            if (getNearest(pplObjArr, "days")["day"] == pplObjArr[index]["day"]) { // check days
+    for (let index in pplObjArr) {
+        if (getNearestDigit(pplObjArr, "month", currentMonth) == pplObjArr[index]["month"]) {  // check months
+            if (getNearestDigit(pplObjArr, "day", currentDay) == pplObjArr[index]["day"]) { // check days
                 identicals.push(pplObjArr[index])
             }
         }
@@ -46,7 +47,7 @@ const getFormated = pplObjArr => {
     console.log(`On ${people[0]["month"]}/${people[0]["day"]}`)
 
     // print people's name with identical bdays
-    for (const index in people) {
+    for (let index in people) {
         console.log(`Happy Birthday, ${people[index]["Name"]}:)`)
     }
 }
