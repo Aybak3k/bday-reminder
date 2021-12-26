@@ -10,7 +10,10 @@ const pplObjArr = [
 
 
 // Current Date Vars
-const currentDate = new Date(2022, 3 - (1), 1)
+// TODO: change day, break bday
+// TODO: why month is sub
+const currentDate = new Date(2022, 5 - (1), 1)
+
 const currentMonth = currentDate.getMonth()  // 0-11
 const currentDay = currentDate.getDate()  // 1-31
 
