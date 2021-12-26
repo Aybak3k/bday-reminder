@@ -9,18 +9,25 @@ const pplObjArr = [
 ]
 
 
-// Current Date Vars
-// TODO: change day, break bday
-// TODO: why month is sub
-const currentDate = new Date(2022, 5 - (1), 1)
+// Return Digits  // "map ain func"..
+const returnDigits = (objArr, calDigit) => {
+    let arr = []
+    for (let ele of objArr){
+        arr.push(ele[`${calDigit}`])
+    }
+    return arr
+}
 
-const currentMonth = currentDate.getMonth()  // 0-11
+
+// Current Date Vars
+const currentDate = new Date(2022, 5 - (1), 1)
+const currentMonth = currentDate.getMonth() + 1  // 0-11
 const currentDay = currentDate.getDate()  // 1-31
 
 
 // Find Nearest Calendrical Digit >> month || day
 const getNearestDigit = (pplObjArr, calDigit, currentDigit) => {
-    const filteredDigits = pplObjArr.map(obj => obj[`${calDigit}`]).filter(digit => digit >= currentDigit)
+    const filteredDigits = returnDigits(pplObjArr, calDigit).filter(digit => digit >= currentDigit)
     const nearest = filteredDigits.reduce((a,b) => (a > b) ? b : a)
     return nearest
 }
@@ -30,15 +37,19 @@ const getNearestDigit = (pplObjArr, calDigit, currentDigit) => {
 const getIdenticals = pplObjArr => {
     const identicals = []
 
+    // TODO: it crashes on 1/5 >> bcz of days
     for (let index in pplObjArr) {
         if (getNearestDigit(pplObjArr, "month", currentMonth) == pplObjArr[index]["month"]) {  // check months
             if (getNearestDigit(pplObjArr, "day", currentDay) == pplObjArr[index]["day"]) { // check days
                 identicals.push(pplObjArr[index])
+            } else {
+                // TODO: if day not found in current month >> go to the next one
+                // 1 !=2
             }
         }
     }
 
-    return identicals
+    return getNearestDigit(pplObjArr, "day", currentDay)
 }
 
 
@@ -57,4 +68,7 @@ const getFormated = pplObjArr => {
 
 
 // Testing
-getFormated(pplObjArr)
+const lg = val => console.log(val)
+// getFormated(pplObjArr)
+// lg(returnDigits(pplObjArr, 'month'))
+lg(getNearestDigit(pplObjArr, "month", currentMonth))
