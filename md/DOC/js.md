@@ -11,6 +11,7 @@ Object.keys(obj)[0]
 1) [Custom Nodejs Modules](#custom-nodejs-modules)
 1) [__dirname](#dirname)
 1) [Change the name Crash the main](#change-the-name-crash-the-main)
+1) ["go to next year"](#go-to-next-year)
 ___
 <br><br><br>
 
@@ -86,4 +87,18 @@ module.exports = $  // main func()
 pplObjArr.reduce((a,b) => (a.calDigit > b.calDigit) ? a : b)
 // get ur eyes checked dude >> ? b : a
 // but... Y tho?!...
+```
+
+___
+<br><br>
+
+
+## go to next year
+
+```js
+// 1) use recursion
+// 2) "go to the next year !add a whole year"
+if (nextBdays.length == 0) {
+    return getNextBday(dataObjArr, new Date(currentDate.setFullYear(currentDate.getFullYear() + 1, 0, 1)))
+}
 ```
