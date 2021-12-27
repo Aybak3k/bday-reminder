@@ -8,3 +8,4 @@
         - [ ] compare-bdays.js
         - [ ] index.js
 1) [ ] add new alg to DOC
+<!-- export the function make it not function  -->

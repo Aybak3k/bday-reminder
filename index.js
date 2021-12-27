@@ -1,6 +1,7 @@
-const getData = require('./lib/retrieve-data')
-const compareData = require('./lib/compare-bdays')
+const data = require('./lib/retrieve-data')()
+const getNextBday = require('./lib/get-next-bday')
 
-compareData(
-    getData()
+
+console.log(
+    getNextBday(data, new Date())
 )

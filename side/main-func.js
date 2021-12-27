@@ -5,8 +5,8 @@ const pplObjArr = [
     { Name: 'bot-1-4-2000', day: 1, month: 4, year: 2000 },
     { Name: 'bot-1-8-2000', day: 1, month: 8, year: 2000 },
     { Name: 'bot-12-5-2000', day: 12, month: 5, year: 2000 },
-    { Name: 'bot-31-5-2000', day: 30, month: 5, year: 2000 }
-]
+    { Name: 'bot-31-5-2000', day: 31, month: 5, year: 2000 }
+  ]
 
 
 // Create an Array of Dates that haven't passed yet
@@ -28,6 +28,6 @@ const getNextBday = (dataObjArr = pplObjArr, currentDate = new Date()) => {
 // Testing
 const lg = val => console.log(val)
 lg(
-    // getNextBday()
-    getNextBday(undefined, new Date(2022, 8, 1))
+    getNextBday(undefined, new Date())
+    // getNextBday(undefined, new Date(2022, 8, 1))
 )
