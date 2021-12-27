@@ -7,3 +7,4 @@
     - [ ] files to modify
         - [ ] compare-bdays.js
         - [ ] index.js
+1) [ ] add new alg to DOC

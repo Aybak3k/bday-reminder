@@ -9,38 +9,25 @@ const pplObjArr = [
 ]
 
 
-// Vars
-const currentDate = new Date(2022, 8, 1)
-
-
 // Create an Array of Dates that haven't passed yet
-const listBdays = (dataObjArr = pplObjArr) => {
+const getNextBday = (dataObjArr = pplObjArr, currentDate = new Date()) => {
     const nextBdays = []
     for (const index in dataObjArr) {
         const ele = new Date(currentDate.getFullYear(), dataObjArr[index]['month'] - 1, dataObjArr[index]['day'])
         if (!(ele < currentDate)){
             nextBdays.push(ele)
-        } else {
-            // TODO: if undefined then go to the next year
         }
     }
-    return nextBdays
-}
-
-
-// Return the Next bday(s)
-const getNextBday = datesArr => {
-    return datesArr.reduce((a,b) => (a > b) ? b : a)
+    if (nextBdays.length == 0) {
+        return getNextBday(undefined, new Date(currentDate.setFullYear(currentDate.getFullYear() + 1, 0, 1)))
+    }
+    return nextBdays.reduce((a,b) => (a > b) ? b : a).toDateString()
 }
 
 
 // Testing
 const lg = val => console.log(val)
-// lg(
-//     getNextBday(listBdays())
-//     .toDateString()
-// )
 lg(
-    listBdays()
-    // TODO: dataObjArr []
+    // getNextBday()
+    getNextBday(undefined, new Date(2022, 8, 1))
 )
