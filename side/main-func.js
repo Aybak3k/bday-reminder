@@ -1,5 +1,5 @@
 // Data
-const pplObjArr = [
+const data = [
     { Name: 'bot-1-2-2000', day: 1, month: 2, year: 2000 },
     { Name: 'bot-1-3-2000', day: 1, month: 3, year: 2000 },
     { Name: 'bot-1-4-2000', day: 1, month: 4, year: 2000 },
@@ -10,7 +10,7 @@ const pplObjArr = [
 
 
 // Create an Array of Dates that haven't passed yet
-const getNextBday = (dataObjArr = pplObjArr, currentDate = new Date()) => {
+const getNextBday = (dataObjArr = data, currentDate = new Date()) => {
     const nextBdays = []
     for (const index in dataObjArr) {
         const ele = new Date(currentDate.getFullYear(), dataObjArr[index]['month'] - 1, dataObjArr[index]['day'])
