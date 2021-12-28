@@ -1,7 +1,9 @@
+// Imports
 const data = require('./lib/retrieve-data')()
-const getNextBday = require('./lib/get-next-bday')
+const nextBday = require('./lib/get-next-bday')(data, new Date())
+const bdayPeople = require('./lib/get-bday-ppl')(nextBday, data)
+const formattedMsg = require('./lib/formatter')(nextBday, bdayPeople)
 
 
-console.log(
-    getNextBday(data, new Date()).toDateString()
-)
+// OUTPUT
+console.log(formattedMsg)
