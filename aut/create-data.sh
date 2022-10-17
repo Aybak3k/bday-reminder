@@ -14,6 +14,7 @@ tmpl_gen () {
     m=$2
     y=$3
 
+
     name="bot-${d}-${m}-${y}"
     template="
     {\n
@@ -22,6 +23,8 @@ tmpl_gen () {
         \t\"month\": ${m},\n
         \t\"year\": ${y}\n}
     "
+
+
     tmpl_gen_this_val=$template
     tmpl_gen_name_val=$name
 }
