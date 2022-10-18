@@ -10,6 +10,5 @@ ___
 
 - takes input from the user and store it
 - option for dropping the year?
-- option to view all?
 - more info for each person in `data/`
 - .csv for data entry

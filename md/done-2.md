@@ -14,3 +14,10 @@
 1) add a file to format input
     - [X] getIdenticals
     - [X] congrat msg
+1) Fix Design Pattern
+    - formatter -> index.js
+    - next-bday && bday-ppl -> 1 file
+    - crete realistic data for demo
+    - Run Tests && fix Code XD
+        - Overlooked Step:- `currentDate` in `infoReturned.nextBday` assignment
+    - separate data dir
