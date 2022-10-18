@@ -1,7 +1,6 @@
 // Imports
 const data = require('./lib/retrieve-data')()
-const nextBday = require('./lib/get-next-bday')(data, new Date())
-const bdayPeople = require('./lib/get-bday-ppl')(nextBday, data)
+const {nextBday, bdayPeople} = require('./lib/analyze-data')(data, new Date())
 
 
 // Output a Structured Congrats Msg
